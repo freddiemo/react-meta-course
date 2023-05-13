@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './assets/logo.png';
 
 function App() {
+  const avatarImg = "https://picsum.photos/400/265";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        <img src={Logo} height="200" alt="Logo"/>
+        <img src={avatarImg} alt="User"/>
+      </h1>
     </div>
   );
 }
